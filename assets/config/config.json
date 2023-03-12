@@ -1,0 +1,46 @@
+{
+    "bot": {
+        "token" : "6074154625:AAEZqAQvnKXtz0VOGUnwGSvwoUgmZvzFpe4",
+        "bot_name" : "BTC Pulse",
+        "bot_user_name" : "PulseBTC_bot"
+    },
+    "database": {
+        "DB_file" : ["assets", "BD", "BTC_Pulse_BD.db"]
+    },
+    "Glassnode" : {
+        "token" : "2LRvyDV1775KRPxSzO7dsCENkXq",
+        "base_url" : "https://api.glassnode.com/v1/metrics/"
+    },
+
+    "FG" : {
+        "photo_url" : "https://alternative.me/crypto/fear-and-greed-index.png"
+    },
+    "gifs": {
+        "to_hell":{
+            "falling" : "https://media.giphy.com/media/QLvwZnkqZT6RY88qte/giphy-downsized-large.gif",
+            "coaster_down" : "https://media.giphy.com/media/RgxAkfVQWwkjS/giphy.gif",
+            "holdlor" : "https://media.giphy.com/media/7fC19PY8vAVLoyxNDu/giphy.gif",
+            "dip" : "https://media.giphy.com/media/JWNHQU49Datixljxp5/giphy.gif"
+        },
+        "to_moon": {
+            "moon" : "https://media.giphy.com/media/x0K1npzVuzmhtSJHqn/giphy.gif",
+            "fomoing" : "https://media.giphy.com/media/e0ixZgambeBsvdIGAE/giphy.gif",
+            "fomo_hit": "https://media.giphy.com/media/yL4Nraa3csZXgEsySN/giphy.gif"
+        },
+        "bullish" : {
+            "bullish" : "https://media.giphy.com/media/JeEC3mlQLjGk7smSJu/giphy.gif",
+            "back" : "https://media.giphy.com/media/EkO6UqwhwcKFqEYXQO/giphy.gif",
+            "coaster_up" : "https://media.giphy.com/media/7FBY7h5Psqd20/giphy.gif",
+            "laser_eyes" : "https://media.giphy.com/media/hrBmVoBi0dekru0VdP/giphy.gif"   
+        },
+        "bearish" : {
+            "weak_hands" : "https://media.giphy.com/media/iI66xtH0i2LjKZHme7/giphy.gif",
+            "bear" : "https://media.giphy.com/media/zzQKrTT326GZG2s8O9/giphy.gif",
+            "candles" : "https://media.giphy.com/media/CX3HePN40vQytywUdZ/giphy.gif"
+        },
+        "lateral" : {
+            "coaster_waiting" : "https://media.giphy.com/media/ehtr0A3IhmXPq/giphy.gif",
+            "boring" : "https://media.giphy.com/media/KPDZ55SvovQv6/giphy.gif"
+        }
+    }
+}
