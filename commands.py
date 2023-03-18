@@ -91,15 +91,26 @@ class Commands():
         bot= context.bot
         chat_id=update.effective_chat.id
         weekly_addresses, monthly_addresses = self.__metrics.ative_addresses()
-        message = rf"""
+        SOPR = rf"""
                 <b>Valores del SOPR semanal</b>: {self.__metrics.SOPR}
-                <b>Nuevas direcciones en la última semana</b>: {weekly_addresses}
-                <b>Nuevas direcciones en el último mes</b>: {monthly_addresses}
+                """
+        adresses = rf"""<b>Nuevas direcciones en la última semana</b>: {weekly_addresses}.
+        <br/><b>Nuevas direcciones en el último mes</b>:  {monthly_addresses}
+        """
+        hash_rate = rf"""
                 <b>Hash rate promedio última semana</b>: {self.__metrics.hash_rate}
+                """
+        mining_difficulty = rf"""
                 <b>Dificultad de minado media última semana</b>: {self.__metrics.avg_week_difficulty}"""
                 
         #Los valores del SOPR y el hash rate son placeholders. La idea es mostrar gráficos contra el precio de BTC más adelante, cuando aprenda Pandas.
-        await bot.send_message(chat_id, message, parse_mode='HTML') 
+        #To_do: separar mensajes
+        await bot.send_message(chat_id, SOPR, parse_mode='HTML') 
+        await bot.send_message(chat_id, adresses, parse_mode='HTML')
+        await bot.send_message(chat_id, hash_rate, parse_mode='HTML')
+        await bot.send_message(chat_id, mining_difficulty, parse_mode='HTML') 
+         
+        
         
     async def market_stats(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         
